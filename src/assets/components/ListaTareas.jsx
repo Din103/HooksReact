@@ -1,5 +1,5 @@
 import React, { useReducer } from 'react';
-import { useForm } from './hooks/useForm';
+import { useForm   } from './hooks/useForm';
 
 // Estado inicial
 const initialState = [{
@@ -59,7 +59,7 @@ export const ListaTareas = () => {
         </div>
         <button type="submit" className="btn btn-primary">Submit</button>
       </form>
-
+      <hr />
       <ul>
         {tareasState.map(item => (
           <li key={item.id}>{item.tarea}</li>
